@@ -8,12 +8,12 @@
 </head>
 
 <body>
-<?php 
+<php 
 $win = 0;
 $lose = 0;
 ?>
 
-<?php 
+<php 
  for($i = 0,$j = 0;$i <  count($player),$j < count($rival);
  $i++,$j++){
     if(($player[$i] == 0)&&($rival[$j] == 2)){
@@ -26,11 +26,11 @@ $lose = 0;
    $lose++;}
     else if(($player[$i] == 2)&&($rival[$j] == 0)){
    $lose++;}
-    else if(($player[$i] == 5)&&($rival[$j] == 2)){
+    else (($player[$i] == 5)&&($rival[$j] == 2)){
    $lose++;}
  }
 ?>
-<?php
+<php
   print($win.'勝'.$lose.'敗');
 ?>
 </body>
